@@ -1,0 +1,14 @@
+{
+  "name": "website-meutreinamento",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "William Alonço",
+  "license": "ISC",
+  "dependencies": {
+    "hapi": "^8.6.1"
+  }
+}
