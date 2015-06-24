@@ -1,0 +1,23 @@
+{
+  "name": "website-meutreinamento",
+  "version": "1.0.0",
+  "homepage": "https://github.com/williamalonco/website-meutreinamento",
+  "authors": [
+    "williamalonco <william-urias@hotmail.com>"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "license": "privada",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "materialize": "~0.97.0",
+    "modernizr": "~2.8.3"
+  }
+}

@@ -1,21 +1,25 @@
 {
-	"name": "website-meutreinamento",
-	"version": "1.0.0",
-	"description": "",
-	"main": "server.js",
-	"engines": {
-		"node": "0.12.x"
-	},
-	"scripts": {
-		"start": "node server.js"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/williamalonco/website-meutreinamento.git"
-	},
-	"author": "William Alonço",
-	"license": "ISC",
-	"dependencies": {
-		"hapi": "^8.6.1"
-	}
+  "name": "website-meutreinamento",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "engines": {
+    "node": "0.12.x"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/williamalonco/website-meutreinamento.git"
+  },
+  "author": "William Alonço",
+  "license": "ISC",
+  "dependencies": {
+    "hapi": "^8.6.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.0.1"
+  }
 }
