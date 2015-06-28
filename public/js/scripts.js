@@ -16776,4 +16776,10 @@ Picker.extend( 'pickadate', DatePicker )
 
 }( jQuery ));
 
-console.log('Hello World!');
+(function($) {
+	$(function() {
+		$('.button-collapse').sideNav({
+			'edge': 'left'
+		});
+	});
+})(jQuery);

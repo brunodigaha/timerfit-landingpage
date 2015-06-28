@@ -1,7 +1,8 @@
-$primary-color: #6C1D67;
-$font-color: #F2E9E9;
-
 body {
-	background-color: $primary-color;
-	color: $font-color;
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+main {
+	flex: 1 0 auto;
 }

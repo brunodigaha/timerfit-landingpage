@@ -1,4 +1,3 @@
-@import "https://fonts.googleapis.com/icon?family=Material+Icons";
 .materialize-red.lighten-5 {
   background-color: #fdeaeb !important; }
 
@@ -8351,5 +8350,9 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
     margin-bottom: 5em; } }
 
 body {
-  background-color: #6C1D67;
-  color: #F2E9E9; }
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
+
+main {
+  flex: 1 0 auto; }
