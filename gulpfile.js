@@ -9,7 +9,7 @@ gulp.task('sass', function() {
 });
 
 gulp.task('js', function() {
-	return gulp.src(['./public/bower_components/modernizr/modernizr.js', './public/bower_components/jquery/dist/jquery.js', './public/bower_components/materialize/dist/js/materialize.js', 'public/js/custom.js'])
+	return gulp.src(['./public/bower_components/modernizr/modernizr.js', './public/bower_components/jquery/dist/jquery.js', './public/bower_components/materialize/dist/js/materialize.js', './public/bower_components/holderjs/holder.js', 'public/js/custom.js'])
 		.pipe(concat({
 			path: 'scripts.js',
 			stat: {
