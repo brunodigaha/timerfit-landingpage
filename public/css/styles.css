@@ -8356,3 +8356,9 @@ body {
 
 main {
   flex: 1 0 auto; }
+
+.inner {
+  display: none;
+  margin-top: 20px; }
+  .inner .card {
+    display: none; }
