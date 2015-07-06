@@ -1,6 +1,15 @@
-var gulp = require('gulp'),
-	sass = require('gulp-sass'),
-	concat = require('gulp-concat');
+var gulp 	= require('gulp'),
+	jade 	= require('gulp-jade'),
+	sass 	= require('gulp-sass'),
+	concat 	= require('gulp-concat');
+
+gulp.task('jade', function() {
+	gulp.src('./public/template/**/index.jade')
+		.pipe(jade({
+			pretty: true
+		}))
+		.pipe(gulp.dest('./public/'))
+});
 
 gulp.task('sass', function() {
 	gulp.src('./public/css/sass/**/*.scss')
@@ -20,8 +29,9 @@ gulp.task('js', function() {
 });
 
 gulp.task('watch', function() {
+	gulp.watch('./public/template/**/*.jade', ['jade']);
 	gulp.watch('./public/css/sass/**/*.scss', ['sass']);
 	gulp.watch('./public/js/**/*.js', ['js']);
 });
 
-gulp.task('default', ['sass', 'js', 'watch']);
+gulp.task('default', ['jade', 'sass', 'js', 'watch']);

@@ -19337,6 +19337,7 @@ return /******/ (function(modules) { // webpackBootstrap
                 $('.inner .card').show(100);
             });
         });
+        $('.scrollspy').scrollSpy();
         $("#send_mail").submit(function() {
             var name = $("#name").val();
             var email = $("#email").val();
