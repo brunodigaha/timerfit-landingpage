@@ -22,7 +22,7 @@ gulp.task('jade', function() {
 
 // Task Sass
 gulp.task('sass', function() {
-	gulp.src('./public/css/sass/**/*.scss')
+	gulp.src('./public/css/sass/**/*.sass')
 		.pipe(sass())
 		.on('error', function(error) {
 			console.error('' + error);
@@ -54,6 +54,6 @@ gulp.task('default', ['jade', 'sass', 'js'], function() {
 		server: './public/'
 	});
 	gulp.watch('./public/templates/**/*.jade', ['jade']);
-	gulp.watch('./public/css/sass/**/*.scss', ['sass']);
+	gulp.watch('./public/css/sass/**/*.sass', ['sass']);
 	gulp.watch('./public/js/**/*.js', ['js']);
 });

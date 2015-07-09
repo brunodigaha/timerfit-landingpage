@@ -8349,10 +8349,16 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   .picker--time .picker__box {
     margin-bottom: 5em; } }
 
+@font-face {
+  font-family: source-sans-pro-light;
+  src: url("../../fonts/source-sans-pro-light/sourcesanspro-light-webfont.eot");
+  src: url("../../fonts/source-sans-pro-light/sourcesanspro-light-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/source-sans-pro-light/sourcesanspro-light-webfont.woff") format("woff"), url("../../fonts/source-sans-pro-light/sourcesanspro-light-webfont.woff2") format("woff2"), url("../../fonts/source-sans-pro-light/sourcesanspro-light-webfont.ttf") format("truetype"), url("../../fonts/source-sans-pro-light/sourcesanspro-light-webfont.svg#sourcesanspro-light-webfont") format("svg"); }
+
 body {
   display: flex;
   min-height: 100vh;
-  flex-direction: column; }
+  flex-direction: column;
+  font-family: source-sans-pro-light; }
 
 main {
   flex: 1 0 auto; }
