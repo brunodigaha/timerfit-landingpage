@@ -8371,4 +8371,11 @@ p {
   -webkit-font-smoothing: antialiased; }
 
 .brand-logo {
-  margin-top: 4px; }
+  margin-top: 0.3em; }
+
+@media only screen and (max-width: 600px) {
+  .brand-logo {
+    margin-top: 0.3em; }
+    .brand-logo #logo {
+      width: 146px;
+      height: 38px; } }
