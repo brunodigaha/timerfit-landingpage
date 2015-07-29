@@ -1,6 +1,6 @@
 var gulp 		= require('gulp'),
 	jade 		= require('gulp-jade'),
-	sass 		= require('gulp-sass'),
+	stylus 		= require('gulp-stylus'),
 	concat 		= require('gulp-concat'),
 	browserSync = require('browser-sync'),
 	reload 		= browserSync.reload;
@@ -20,10 +20,10 @@ gulp.task('jade', function() {
 		}));
 });
 
-// Task Sass
-gulp.task('sass', function() {
-	gulp.src('./public/css/sass/**/*.sass')
-		.pipe(sass())
+// Task Stylus
+gulp.task('stylus', function() {
+	gulp.src('./public/css/stylus/**/*.styl')
+		.pipe(stylus())
 		.on('error', function(error) {
 			console.error('' + error);
 		})
@@ -35,7 +35,7 @@ gulp.task('sass', function() {
 
 // Task JS
 gulp.task('js', function() {
-	return gulp.src(['./public/bower_components/modernizr/modernizr.js', './public/bower_components/jquery/dist/jquery.js', './public/bower_components/materialize/dist/js/materialize.js', './public/bower_components/holderjs/holder.js', 'public/js/custom.js'])
+	return gulp.src(['./public/bower_components/modernizr/modernizr.js', 'public/js/custom.js'])
 		.pipe(concat({
 			path: 'scripts.js',
 			stat: {
@@ -49,11 +49,11 @@ gulp.task('js', function() {
 });
 
 // Task Default 
-gulp.task('default', ['jade', 'sass', 'js'], function() {
+gulp.task('default', ['jade', 'stylus', 'js'], function() {
 	browserSync({
 		server: './public/'
 	});
 	gulp.watch('./public/templates/**/*.jade', ['jade']);
-	gulp.watch('./public/css/sass/**/*.sass', ['sass']);
+	gulp.watch('./public/css/stylus/**/*.styl', ['stylus']);
 	gulp.watch('./public/js/**/*.js', ['js']);
 });

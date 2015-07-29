@@ -6,20 +6,13 @@
     "williamalonco <william-urias@hotmail.com>",
     "brucealex <bruce_alex2006@hotmail.com>"
   ],
-  "moduleType": [
-    "node"
-  ],
   "license": "privada",
   "ignore": [
     "**/.*",
     "node_modules",
-    "bower_components",
-    "test",
-    "tests"
+    "bower_components"
   ],
   "devDependencies": {
-    "materialize": "~0.97.0",
-    "modernizr": "~2.8.3",
-    "holderjs": "~2.8.0"
+    "modernizr": "~2.8.3"
   }
 }
