@@ -3470,3 +3470,21 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
     display: none !important;
   }
 }
+.navbar-brand {
+  padding: 10px 15px;
+}
+.navbar-brand .navbar-logo {
+  width: 100px;
+}
+@media (min-width: 992px) {
+  .navbar-fixed-top {
+    padding: 15px 0;
+  }
+  .navbar-fixed-top .navbar-header .navbar-brand {
+    padding: 3px 15px;
+  }
+  .navbar-fixed-top .navbar-header .navbar-brand .navbar-logo {
+    width: 140px;
+    height: 42px;
+  }
+}
