@@ -1,0 +1,17 @@
+section.contact
+	div.container
+		div.row.text-center
+			div.col-md-8.col-md-offset-2
+				h2 Lorem ipsum dolor sit amet
+				hr.small
+		div.row
+			div.col-xs-10.col-xs-offset-1.col-sm-6.col-sm-offset-3.col-md-4.col-md-offset-4
+				div.text-center
+					form(action="#", role="form")
+						div.form-group
+							input.form-control(id="name", type="text", placeholder="Nome", required="")
+						div.form-group
+							input.form-control(id="email", type="email", placeholder="Digite seu Email", required="")
+						div.form-group
+							textarea.form-control(id="message", rows="4", placeholder="Mensagem")
+						button.btn.btn-default.center-block(type="submit") Enviar
