@@ -13,6 +13,7 @@
     "bower_components"
   ],
   "devDependencies": {
-    "modernizr": "~2.8.3"
+    "modernizr": "~2.8.3",
+    "bootstrap-stylus": "~4.0.5"
   }
 }

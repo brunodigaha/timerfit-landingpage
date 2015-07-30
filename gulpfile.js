@@ -22,7 +22,7 @@ gulp.task('jade', function() {
 
 // Task Stylus
 gulp.task('stylus', function() {
-	gulp.src('./public/css/stylus/**/*.styl')
+	gulp.src('./public/css/stylus/**/styles.styl')
 		.pipe(stylus())
 		.on('error', function(error) {
 			console.error('' + error);
@@ -35,7 +35,7 @@ gulp.task('stylus', function() {
 
 // Task JS
 gulp.task('js', function() {
-	return gulp.src(['./public/bower_components/modernizr/modernizr.js', 'public/js/custom.js'])
+	return gulp.src(['./public/bower_components/modernizr/modernizr.js', './public/bower_components/jquery/dist/jquery.js', './public/bower_components/bootstrap-stylus/js/collapse.js', './public/bower_components/bootstrap-stylus/js/transition.js' ,'public/js/custom.js'])
 		.pipe(concat({
 			path: 'scripts.js',
 			stat: {

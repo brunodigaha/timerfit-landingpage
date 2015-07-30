@@ -16,13 +16,13 @@
   "author": "William Alonço",
   "license": "privada",
   "dependencies": {
-    "hapi": "^8.6.1"
+    "hapi": "^8.8.1"
   },
   "devDependencies": {
-    "browser-sync": "^2.7.13",
+    "browser-sync": "^2.8.1",
     "gulp": "^3.9.0",
     "gulp-concat": "^2.6.0",
-    "gulp-jade": "^1.0.1",
+    "gulp-jade": "^1.1.0",
     "gulp-stylus": "^2.0.5"
   }
 }
