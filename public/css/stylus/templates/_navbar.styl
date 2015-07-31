@@ -5,9 +5,19 @@
 @media (min-width: 992px)
 	.navbar-fixed-top
 		padding 15px 0
+		-webkit-transition padding .4s
+		-moz-transition @-webkit-transition
+		transition @-webkit-transition
+	.shrink-nav-fixed
+		padding 0 0
 		.navbar-header
 			.navbar-brand
 				padding 3px 15px
+			.shrink-nav-brand
+				padding 10px 15px
 				.navbar-logo
 					width 140px
 					height 42px
+				.shrink-nav-logo
+					width 100px
+					height 30px

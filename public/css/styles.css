@@ -3482,13 +3482,26 @@ body {
 @media (min-width: 992px) {
   .navbar-fixed-top {
     padding: 15px 0;
+    -webkit-transition: padding 0.4s;
+    -moz-transition: padding 0.4s;
+    transition: padding 0.4s;
   }
-  .navbar-fixed-top .navbar-header .navbar-brand {
+  .shrink-nav-fixed {
+    padding: 0 0;
+  }
+  .shrink-nav-fixed .navbar-header .navbar-brand {
     padding: 3px 15px;
   }
-  .navbar-fixed-top .navbar-header .navbar-brand .navbar-logo {
+  .shrink-nav-fixed .navbar-header .shrink-nav-brand {
+    padding: 10px 15px;
+  }
+  .shrink-nav-fixed .navbar-header .shrink-nav-brand .navbar-logo {
     width: 140px;
     height: 42px;
+  }
+  .shrink-nav-fixed .navbar-header .shrink-nav-brand .shrink-nav-logo {
+    width: 100px;
+    height: 30px;
   }
 }
 .hero-unit {
