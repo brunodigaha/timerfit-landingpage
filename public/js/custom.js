@@ -1,6 +1,6 @@
 // Animated Header
 $(function() {
-  var shrinkHeader = 650;
+  var shrinkHeader = 200;
   $(window).scroll(function() {
     var scroll = getCurrentScroll();
     if (scroll >= shrinkHeader) {
