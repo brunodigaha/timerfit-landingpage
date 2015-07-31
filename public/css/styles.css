@@ -3544,3 +3544,50 @@ body {
     font-size: 7em;
   }
 }
+.features {
+  padding-top: 25px;
+  padding-bottom: 35px;
+  background-color: #1976d2;
+  color: #fafafa;
+}
+.features .title-features {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 3em;
+}
+.features .small {
+  max-width: 200px;
+  padding-bottom: 25px;
+}
+.features .material-icons {
+  display: block !important;
+  font-size: 6em;
+}
+.features .block-title-features {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.8em;
+}
+.features .block-text-features {
+  padding: 0 20px 0 20px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.2em;
+}
+@media (min-width: 768px) {
+  .features .block-features {
+    margin-bottom: 40px;
+  }
+  .features .block-features .block-text-features {
+    padding: 0 5px 0 5px;
+  }
+  .features .block-features-two .block-text-features {
+    padding: 0 5px 0 5px;
+  }
+}
+@media (min-width: 992px) {
+  .features {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+}
