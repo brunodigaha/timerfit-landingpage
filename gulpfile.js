@@ -35,7 +35,7 @@ gulp.task('stylus', function() {
 
 // Task JS
 gulp.task('js', function() {
-	return gulp.src(['./public/bower_components/modernizr/modernizr.js', './public/bower_components/jquery/dist/jquery.js', './public/bower_components/bootstrap-stylus/js/collapse.js', './public/bower_components/bootstrap-stylus/js/transition.js' ,'public/js/custom.js'])
+	return gulp.src(['./public/bower_components/modernizr/modernizr.js', './public/bower_components/jquery/dist/jquery.js', './public/bower_components/bootstrap-stylus/js/collapse.js', './public/bower_components/bootstrap-stylus/js/transition.js', './public/js/animated-header.js', './public/js/smooth-scroll.js', './public/bower_components/scrollReveal.js/dist/scrollReveal.js', './public/js/scroll-reveal.js'])
 		.pipe(concat({
 			path: 'scripts.js',
 			stat: {

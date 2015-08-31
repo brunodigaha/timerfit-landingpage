@@ -6,6 +6,7 @@
     <title>Meu Treinamento</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
     <link type="text/css" rel="stylesheet" href="css/styles.css">
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,100italic,100,300italic,300,400italic,700,700italic,900,900italic">
     <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script type="text/javascript" src="js/scripts.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.8.1/holder.js"></script>
@@ -14,40 +15,41 @@
     <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" data-toggle="collapse" data-target=".navbar-singlepage-collapse" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#" class="navbar-brand"><img src="img/logo.png" class="navbar-logo"></a>
+          <button type="button" data-toggle="collapse" data-target=".navbar-singlepage-collapse" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#home" class="navbar-brand"><img class="navbar-logo"></a>
         </div>
         <div class="collapse navbar-collapse navbar-singlepage-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Seção 1</a></li>
-            <li><a href="#">Seção 2</a></li>
-            <li><a href="#">Seção 3</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#content">Content</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </div>
     </nav>
-    <section class="jumbotron hero-unit">
+    <section id="home" class="jumbotron hero-unit">
       <div class="container">
         <div class="row">
-          <div class="col-sm-6 col-md-6">
+          <div data-sr="enter left, wait 0.8s" class="col-sm-6 col-md-6">
             <h1 class="call-hero">Lorem ipsum dolor sit amet</h1>
             <p class="msg-hero">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum exercita ipsum dolor sit amet.</p>
           </div>
           <div class="col-sm-6 col-md-6">
-            <div class="embed-responsive embed-responsive-4by3 video-hero">
+            <div data-sr="enter right, wait 0.8s" class="embed-responsive embed-responsive-4by3 video-hero">
               <iframe src="https://player.vimeo.com/video/134282244" class="embed-responsive-item"></iframe>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="features">
+    <section id="features" class="features">
       <div class="container">
         <div class="row text-center">
-          <div class="col-md-8 col-md-offset-2">
+          <div data-sr="enter top, wait 0.8s" class="col-md-8 col-md-offset-2">
             <h2 class="title-features">Lorem ipsum dolor sit amet</h2>
             <hr class="small">
           </div>
-          <div class="row block-features">
+          <div data-sr="wait 0.4s, hustle 10px" class="row block-features">
             <div class="col-sm-4 col-md-4"><i class="material-icons">query_builder</i>
               <h3 class="block-title-features">Lorem ipsum dolor</h3>
               <p class="block-text-features">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum exercitationem fuga voluptatem asperiores omnis aperiam.</p>
@@ -61,7 +63,7 @@
               <p class="block-text-features">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum exercitationem fuga voluptatem asperiores omnis aperiam.</p>
             </div>
           </div>
-          <div class="row block-features-two">
+          <div data-sr="wait 0.4s, hustle 10px" class="row block-features-two">
             <div class="col-sm-4 col-md-4"><i class="material-icons">stay_current_landscape</i>
               <h3 class="block-title-features">Lorem ipsum dolor</h3>
               <p class="block-text-features">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum exercitationem fuga voluptatem asperiores omnis aperiam.</p>
@@ -78,7 +80,7 @@
         </div>
       </div>
     </section>
-    <section class="content-header">
+    <section id="content" data-sr="enter top, wait 0.8s" class="content-header">
       <div class="container">
         <div class="row text-center">
           <div class="col-md-8 col-md-offset-2">
@@ -88,7 +90,7 @@
         </div>
       </div>
     </section>
-    <section class="content-a">
+    <section data-sr="enter left, wait 0.5s, scale up 25%, spin 180deg" class="content-a">
       <div class="container">
         <div class="row">
           <div class="col-sm-6">
@@ -99,7 +101,7 @@
         </div>
       </div>
     </section>
-    <section class="content-b">
+    <section data-sr="enter left, wait 0.45, scale up 25%, spin 180deg" class="content-b">
       <div class="container">
         <div class="row">
           <div class="col-sm-6 col-sm-push-6">
@@ -110,7 +112,7 @@
         </div>
       </div>
     </section>
-    <section class="content-a">
+    <section data-sr="enter left, wait 0.5s, scale up 25%, spin 180deg" class="content-a">
       <div class="container">
         <div class="row">
           <div class="col-sm-6">
@@ -121,7 +123,7 @@
         </div>
       </div>
     </section>
-    <section class="contact">
+    <section id="contact" data-sr="enter top, wait 0.8s" class="contact">
       <div class="container">
         <div class="row text-center">
           <div class="col-md-8 col-md-offset-2">
@@ -149,7 +151,7 @@
         </div>
       </div>
     </section>
-    <footer>
+    <footer class="footer">
       <div class="container">
         <div class="row">
           <div class="col-md-6">

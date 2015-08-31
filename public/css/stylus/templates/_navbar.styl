@@ -1,23 +1,48 @@
-.navbar-brand
-	padding 10px 15px
-	.navbar-logo
-		width 100px
+.navbar-default
+	background-color palette('Grey', '50')
+	border-color palette('Grey', '200')
+	.navbar-header
+		.navbar-brand
+			padding 10px 15px
+			.navbar-logo
+				background-image url(../img/logo.png)
+				background-repeat no-repeat
+				background-size 100px 30px
+				width 100px
+				height 30px
+				content ""
+	.navbar-nav
+		li
+			a
+				color palette('Grey', '400')
+				font-weight bold
+				&:hover
+					color palette('Teal', '500')
 @media (min-width: 992px)
-	.navbar-fixed-top
+	.navbar-default
+		background-color rgba(0,0,0,0.0)
+		border none
 		padding 15px 0
-		-webkit-transition padding .4s
+		-webkit-transition padding 0.5s
 		-moz-transition @-webkit-transition
+		-ms-transition @-webkit-transition
+		-o-transition @-webkit-transition
 		transition @-webkit-transition
-	.shrink-nav-fixed
-		padding 0 0
 		.navbar-header
 			.navbar-brand
 				padding 3px 15px
-			.shrink-nav-brand
-				padding 10px 15px
 				.navbar-logo
+					background-size 140px 42px
 					width 140px
 					height 42px
-				.shrink-nav-logo
+	.animated-nav-default
+		padding 0 0
+		background-color palette('Grey', '50')
+		border-bottom 1px solid palette('Grey', '200')
+		.navbar-header
+			.animated-nav-brand
+				padding 10px 15px
+				.animated-nav-logo
+					background-size 100px 30px
 					width 100px
 					height 30px
