@@ -1,7 +1,7 @@
 {
   "name": "website-meutreinamento",
   "version": "1.0.0",
-  "description": "",
+  "description": "website-meutreinamento",
   "main": "server.js",
   "engines": {
     "node": "0.12.x"
@@ -13,16 +13,21 @@
     "type": "git",
     "url": "https://github.com/williamalonco/website-meutreinamento.git"
   },
-  "author": "William Alonço",
+  "authors": [
+    "William Alonço <william-urias@hotmail.com>",
+    "Bruno Alexandre <bruce_alex2006@hotmail.com>"
+  ],
   "license": "privada",
   "dependencies": {
-    "hapi": "^8.8.1"
+    "hapi": "^9.3.1"
   },
   "devDependencies": {
     "browser-sync": "^2.8.1",
     "gulp": "^3.9.0",
     "gulp-concat": "^2.6.0",
     "gulp-jade": "^1.1.0",
-    "gulp-stylus": "^2.0.5"
+    "gulp-jshint": "^1.11.2",
+    "gulp-stylus": "^2.0.5",
+    "jshint-stylish": "^2.0.1"
   }
 }

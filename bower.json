@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "homepage": "https://github.com/williamalonco/website-meutreinamento",
   "authors": [
-    "williamalonco <william-urias@hotmail.com>",
-    "brucealex <bruce_alex2006@hotmail.com>"
+    "William Alonço <william-urias@hotmail.com>",
+    "Bruno Alexandre <bruce_alex2006@hotmail.com>"
   ],
   "license": "privada",
   "ignore": [
@@ -13,9 +13,10 @@
     "bower_components"
   ],
   "devDependencies": {
-    "modernizr": "~2.8.3",
     "bootstrap-stylus": "~4.0.5",
+    "google-material-color": "~1.2.2",
     "jquery": "~2.1.4",
-    "google-material-color": "~1.2.2"
+    "modernizr": "~2.8.3",
+    "scrollreveal": "scrollReveal.js#~2.3.2"
   }
 }

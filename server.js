@@ -18,6 +18,6 @@ server.route({
 	}
 });
 
-server.start(function() {
+server.start(function () {
 	console.log('Hapi server started: ' + server.info.uri);
 });
