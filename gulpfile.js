@@ -4,6 +4,7 @@ var gulp 		= require('gulp'),
 	stylus 		= require('gulp-stylus'),
 	jshint 		= require('gulp-jshint'),
 	stylish 	= require('jshint-stylish'),
+	cache 		= require('gulp-cached'),
 	concat 		= require('gulp-concat'),
 	browserSync = require('browser-sync'),
 	reload 		= browserSync.reload;
@@ -51,6 +52,7 @@ gulp.task('stylus', function () {
 // Task JSHint
 gulp.task('jshint', function () {
 	return gulp.src(jsfiles)
+		.pipe(cache())
 		.pipe(jshint())
 		.pipe(jshint.reporter('jshint-stylish'));
 });

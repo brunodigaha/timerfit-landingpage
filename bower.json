@@ -3,8 +3,18 @@
   "version": "1.0.0",
   "homepage": "https://github.com/williamalonco/website-meutreinamento",
   "authors": [
-    "William Alonço <william-urias@hotmail.com>",
-    "Bruno Alexandre <bruce_alex2006@hotmail.com>"
+    {
+      "name": "William Alonço",
+      "email": "william-urias@hotmail.com",
+      "homepage": "https://github.com/williamalonco",
+      "role": "Desenvolvedor"
+    },
+    {
+      "name": "Bruno Alexandre",
+      "email": "bruce_alex2006@hotmail.com",
+      "homepage": "https://github.com/brucealex",
+      "role": "Desenvolvedor"
+    }
   ],
   "license": "privada",
   "ignore": [

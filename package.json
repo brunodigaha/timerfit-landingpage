@@ -14,8 +14,18 @@
     "url": "https://github.com/williamalonco/website-meutreinamento.git"
   },
   "authors": [
-    "William Alonço <william-urias@hotmail.com>",
-    "Bruno Alexandre <bruce_alex2006@hotmail.com>"
+    {
+      "name": "William Alonço",
+      "email": "william-urias@hotmail.com",
+      "homepage": "https://github.com/williamalonco",
+      "role": "Desenvolvedor"
+    },
+    {
+      "name": "Bruno Alexandre",
+      "email": "bruce_alex2006@hotmail.com",
+      "homepage": "https://github.com/brucealex",
+      "role": "Desenvolvedor"
+    }
   ],
   "license": "privada",
   "dependencies": {
@@ -24,6 +34,7 @@
   "devDependencies": {
     "browser-sync": "^2.8.1",
     "gulp": "^3.9.0",
+    "gulp-cached": "^1.1.0",
     "gulp-concat": "^2.6.0",
     "gulp-jade": "^1.1.0",
     "gulp-jshint": "^1.11.2",
