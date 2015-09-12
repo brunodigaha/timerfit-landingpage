@@ -6,6 +6,9 @@ var gulp 		= require('gulp'),
 	stylish 	= require('jshint-stylish'),
 	cache 		= require('gulp-cached'),
 	concat 		= require('gulp-concat'),
+	imagemin 	= require('gulp-imagemin'),
+	jpgcompress = require('imagemin-jpeg-recompress'),
+	pngquant 	= require('imagemin-pngquant'),
 	browserSync = require('browser-sync'),
 	reload 		= browserSync.reload;
 
@@ -72,8 +75,21 @@ gulp.task('js', function () {
 		}));
 });
 
+// Task Images
+gulp.task('img', function () {
+	return gulp.src('./public/img/src/*.{jpg,png}')
+		.pipe(jpgcompress({
+			loops: 3
+		})())
+		.pipe(pngquant({
+			quality: '65-80',
+			speed: 4
+		})())
+		.pipe(gulp.dest('./public/img'))
+});
+
 // Task Default 
-gulp.task('default', ['jade', 'stylus', 'jshint', 'js'], function () {
+gulp.task('default', ['jade', 'stylus', 'jshint', 'js', 'img'], function () {
 	browserSync({
 		server: './public/'
 	});
@@ -81,4 +97,5 @@ gulp.task('default', ['jade', 'stylus', 'jshint', 'js'], function () {
 	gulp.watch('./public/css/stylus/**/*.styl', ['stylus']);
 	gulp.watch(jsfiles, ['jshint']);
 	gulp.watch('./public/js/**/*.js', ['js']);
+	gulp.watch('public/img/src/**/*.{jpg,png}', ['img']);
 });
