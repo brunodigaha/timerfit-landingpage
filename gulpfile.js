@@ -18,10 +18,8 @@ var jsfiles = [
 	'./public/bower_components/jquery/dist/jquery.js',
 	'./public/bower_components/bootstrap-stylus/js/collapse.js',
 	'./public/bower_components/bootstrap-stylus/js/transition.js',
-	'./public/bower_components/scrollreveal/dist/scrollReveal.js',
-	'./public/js/lib/animated-header.js',
-	'./public/js/lib/smooth-scroll.js',
-	'./public/js/lib/scroll-reveal.js'
+	'./public/bower_components/magnific-popup/dist/jquery.magnific-popup.js',
+	'./public/js/lib/magnific-popup.js'
 ];
 
 // Task Jade
