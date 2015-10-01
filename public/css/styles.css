@@ -1,3 +1,4 @@
+@import '../../../bower_components/magnific-popup/dist/magnific-popup.css';
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
@@ -3476,6 +3477,10 @@ html {
 body {
   height: 100%;
 }
+section {
+  display: table;
+  width: 100%;
+}
 header {
   height: 100vh;
   background-image: url("../img/hero.jpg");
@@ -3486,4 +3491,27 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+.features {
+  height: 100vh;
+  background-color: #26a69a;
+  color: #fafafa;
+}
+.features .vertical-features {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.features .vertical-features .container .header-features .divisor {
+  max-width: 200px;
+}
+.features .vertical-features .container .block-features .icon-features {
+  width: 64px;
+  height: 64px;
+}
+@media (min-width: 768px) {
+  .block-features {
+    margin-top: 30px;
+  }
 }
