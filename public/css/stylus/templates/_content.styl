@@ -1,52 +1,35 @@
 .content-header
-	padding-top 25px
-	background-color palette('Grey', '50')
-	color palette('Grey', '900')
+	padding 3em 0
+	text-align center
+	background-color palette('White')
 	.title-content
-		font-style normal
+		color palette('Grey', '500')
+		text-transform uppercase
 		font-weight 900
-		font-size 3em
 	.small
-		max-width 200px
+		max-width 20em
 .content-a
-	padding 20px 0
-	background-color palette('Grey', '50')
+	padding 5em 0
+	background-color palette('White')
 	.title-content-heading
-		margin-top 0
-		font-weight 700
+		font-weight 900
+		text-transform uppercase
+		color palette('Grey', '500')
 		text-align center
 	.lead
 		text-align center
 	.img-content
 		margin 0 auto
 .content-b
-	padding 20px 0
-	border-top 1px solid palette('Grey', '300')
-	border-bottom @border-top
-	.title-content-heading
-		margin-top 0
-		font-weight 700
-		text-align center
-	.lead
-		text-align center
-	.img-content
-		margin 0 auto
-@media (min-width: 768px)
+	@extends .content-a
+@media(min-width: 768px)
 	.content-header
-		padding-bottom 35px
+		.title-content
+			margin-top 0.3em
 	.content-a
-		padding 50px 0
 		.title-content-heading
 			text-align left
 		.lead
 			text-align left
-		.img-content
-			float right
 	.content-b
-		padding 50px 0
-		.title-content-heading
-			text-align left
-		.lead
-			text-align left
-		.img-content
-			float left
+		@extends .content-a

@@ -1,7 +1,5 @@
 .features
-	height 100vh
 	background-color palette('Teal', '400')
-	color palette('Grey', '50')
 	.vertical-features
 		min-height @height
 		display flex
@@ -9,6 +7,7 @@
 		text-align @align-items
 		.container
 			.header-features
+				padding 3em 0
 				.title-features
 					color palette('Grey', '50')
 					text-transform uppercase
@@ -16,6 +15,7 @@
 				.divisor
 					max-width 20em
 			.block-features
+				padding 5em 0
 				.icon-features
 					width 64px
 					height @width
@@ -28,3 +28,7 @@
 					color palette('Grey', '50')
 					font-size 1.8em
 					font-weight 300
+@media(min-width: 768px)
+	.header-features
+		.title-features
+			margin-top 0.3em
