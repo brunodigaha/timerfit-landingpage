@@ -1,17 +1,14 @@
-section#contact.contact(data-sr='enter top, wait 0.8s')
+section.contact
 	div.container
-		div.row.text-center
+		div.row.header-contact
 			div.col-md-8.col-md-offset-2
-				h2 Lorem ipsum dolor sit amet
-				hr.small
-		div.row
-			div.col-xs-10.col-xs-offset-1.col-sm-6.col-sm-offset-3.col-md-4.col-md-offset-4
-				div.text-center
+				h2.title-contact Lorem ipsum dolor sit amet
+				hr.divisor
+		div.row.mail
+			div.col-md-6.col-md-offset-3
+				div.well
 					form(id="", role="form")
-						div.form-group
-							input.form-control(id="name", type="text", placeholder="Nome", required)
-						div.form-group
-							input.form-control(id="email", type="email", placeholder="Digite seu Email", required)
-						div.form-group
-							textarea.form-control(id="message", rows="4", placeholder="Mensagem")
-						button.btn.btn-default.center-block(type="submit") Enviar
+						div.input-group
+							input.form-control.input-lg.email-form(id="email", type="email", placeholder="Digite seu Email", required)
+							span.input-group-btn
+								button.btn.btn-info.btn-lg.submit-form(type="submit") Enviar

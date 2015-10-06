@@ -1,0 +1,32 @@
+.contact
+	background-color palette('Purple', '700')
+	.header-contact
+		padding 3em 0
+		text-align center
+		.title-contact
+			color palette('Grey', '50')
+			text-transform uppercase
+			font-weight 900
+		.divisor
+			max-width 20em
+	.mail
+		padding 5em 0
+		.well
+			border-radius 0
+			padding 6em
+			background-color palette('Grey', '50')
+			border none
+			-webkit-box-shadow 0 8px 6px -6px black
+			-moz-box-shadow @-webkit-box-shadow
+			box-shadow @-webkit-box-shadow
+			.input-group
+				.email-form
+					border-radius @border-radius
+					height 60px
+				.submit-form
+					border-radius @border-radius
+					height 60px
+@media(min-width: 768px)
+	.header-contact
+		.title-contact
+			margin-top 0.3em

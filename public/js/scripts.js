@@ -13563,7 +13563,7 @@ $(document).ready(function() {
 		reset: false,
 		move: '75px',
 		mobile: true,
-		wait: '0.9s'
+		wait: '0.4s'
 	});
 });
 $(document).ready(function() {
