@@ -1,5 +1,5 @@
-@import '../../../bower_components/magnific-popup/dist/magnific-popup.css';
-@import '../../../bower_components/lato-font/css/lato-font.css';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.css';
+@import 'https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic';
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
@@ -3989,6 +3989,8 @@ html body {
   font-family: Lato;
   font-style: normal;
   font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 html body h1,
 html body h2,
@@ -4004,9 +4006,16 @@ html body section {
 }
 header {
   height: 100vh;
-  background-image: url("../img/hero.jpg");
-  background-size: cover;
+  background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("../img/hero.jpg");
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -4124,7 +4133,16 @@ header .btn-info {
   }
 }
 .contact {
-  background-color: #7b1fa2;
+  background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("../img/contact.jpg");
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 .contact .header-contact {
   padding: 3em 0;
@@ -4139,7 +4157,7 @@ header .btn-info {
   max-width: 20em;
 }
 .contact .mail {
-  padding: 5em 0;
+  padding-bottom: 6em;
 }
 .contact .mail .well {
   border-radius: 0;

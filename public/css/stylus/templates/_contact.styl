@@ -1,5 +1,17 @@
 .contact
-	background-color palette('Purple', '700')
+	background linear-gradient(
+		rgba(0, 0, 0, 0.8),
+		rgba(0, 0, 0, 0.8)),
+		url(../img/contact.jpg)
+	left 0
+	top @left
+	width 100%
+	background-repeat no-repeat
+	background-position center
+	background-size cover
+	-webkit-background-size @background-size
+	-moz-background-size @background-size
+	-o-background-size @background-size
 	.header-contact
 		padding 3em 0
 		text-align center
@@ -10,7 +22,7 @@
 		.divisor
 			max-width 20em
 	.mail
-		padding 5em 0
+		padding-bottom 6em
 		.well
 			border-radius 0
 			padding 6em

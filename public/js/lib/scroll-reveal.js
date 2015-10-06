@@ -3,6 +3,6 @@ $(document).ready(function() {
 		reset: false,
 		move: '75px',
 		mobile: true,
-		wait: '0.4s'
+		wait: '0.5s'
 	});
 });
