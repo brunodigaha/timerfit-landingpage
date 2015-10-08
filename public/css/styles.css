@@ -4006,7 +4006,7 @@ html body section {
 }
 header {
   height: 100vh;
-  background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("../img/hero.jpg");
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../img/hero.jpg");
   left: 0;
   top: 0;
   width: 100%;
@@ -4133,7 +4133,7 @@ header .btn-info {
   }
 }
 .contact {
-  background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("../img/contact.jpg");
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../img/contact.jpg");
   left: 0;
   top: 0;
   width: 100%;
@@ -4180,4 +4180,67 @@ header .btn-info {
   .header-contact .title-contact {
     margin-top: 0.3em;
   }
+}
+.footer {
+  padding: 1em 0;
+  background-color: #263238;
+  color: #bdbdbd;
+  font-size: 1.8em;
+}
+.footer .social-header-footer .social-title-footer {
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #757575;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+.footer #social-links-footer {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footer #social-links-footer li {
+  display: inline-block;
+  margin-right: 0.5em;
+}
+.footer .contact-header-footer .contact-title-footer {
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #757575;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+.footer #contact-list-footer {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footer #contact-list-footer li {
+  display: block;
+  margin-bottom: 1em;
+}
+.footer #contact-list-footer li .icon {
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  margin-right: 0.5em;
+}
+.footer .localization-header-footer .localization-title-footer {
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #757575;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+.footer #localization-footer {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footer #localization-footer li {
+  display: block;
+  margin-bottom: 1em;
+}
+.footer #localization-footer li .city {
+  margin-left: 1.3em;
 }
