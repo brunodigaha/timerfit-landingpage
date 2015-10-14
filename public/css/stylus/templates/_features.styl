@@ -1,34 +1,20 @@
 .features
+	@extends .section
 	background-color palette('Teal', '400')
-	.vertical-features
-		min-height @height
-		display flex
-		align-items center
-		text-align @align-items
-		.container
-			.header-features
-				padding 3em 0
-				.title-features
-					color palette('Grey', '50')
-					text-transform uppercase
-					font-weight 900
-				.divisor
-					max-width 20em
-			.block-features
-				padding 5em 0
-				.icon-features
-					width 64px
-					height @width
-				.block-title-features
-					color palette('Grey', '50')
-					text-transform uppercase
-					font-weight 900
-					margin-top 0.5em
-				.block-description-features
-					color palette('Grey', '50')
-					font-size 1.8em
-					font-weight 300
-@media(min-width: 768px)
-	.header-features
-		.title-features
-			margin-top 0.3em
+	.features-header
+		@extends .section-heading
+		.features-title-heading
+			@extends .section-title
+			color palette('Grey', '50')
+	.features-box-a
+		.icon
+			margin 0 auto
+		.features-title-box
+			text-transform uppercase
+			color palette('Grey', '50')
+			font-weight 900
+		.features-content-box
+			color palette('Grey', '50')
+			padding 0 25px
+	.box-b
+		margin-top 20px

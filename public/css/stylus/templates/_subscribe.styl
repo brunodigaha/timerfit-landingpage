@@ -1,0 +1,41 @@
+.subscribe
+	@extends .section
+	background linear-gradient(
+		rgba(0, 0, 0, 0.5),
+		rgba(0, 0, 0, 0.5)),
+		url(../img/subscribe.jpg)
+	@extends .background
+	.subscribe-header
+		@extends .section-heading
+		.subscribe-title-heading
+			@extends .section-title
+			color palette('Grey', '50')
+	.subscribe-form
+		.subscribe-form-content
+			padding 50px
+			background-color palette('Grey', '50')
+			border none
+			border-radius 0
+			-webkit-box-shadow 0 8px 6px -6px #000
+			-moz-box-shadow @-webkit-box-shadow
+			box-shadow @-webkit-box-shadow
+			.input-group
+				.subscribe-mail
+					height 60px
+					border-radius @border-radius
+					text-transform uppercase
+					font-style italic
+					font-weight 900
+					-webkit-box-shadow 0 8px 6px -6px #CCC
+					-moz-box-shadow @-webkit-box-shadow
+					box-shadow @-webkit-box-shadow
+					&:focus
+						border 1px solid #CCC
+				.subscribe-submit
+					height 60px
+					border-radius @border-radius
+					text-transform uppercase
+					font-style italic
+					font-weight 900
+					&:focus
+						outline 0 none

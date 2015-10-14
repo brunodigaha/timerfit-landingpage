@@ -1,54 +1,27 @@
 .footer
-	padding 1em 0
+	@extends .section
 	background-color palette('Blue Grey', '900')
-	color palette('Grey', '400')
-	font-size 1.8em
-	.social-header-footer
-		.social-title-footer
-			text-transform uppercase
-			font-weight 900
-			color palette('Grey', '600')
-			margin-top 0
-			margin-bottom 1em
-	#social-links-footer
-		list-style none
-		margin 0
-		padding 0
-		li
-			display inline-block
-			margin-right 0.5em
-	.contact-header-footer
-		.contact-title-footer
-			text-transform uppercase
-			font-weight 900
-			color palette('Grey', '600')
-			margin-top 0
-			margin-bottom 1em
-	#contact-list-footer
-		list-style none
-		margin 0
-		padding 0
-		li
-			display block
-			margin-bottom 1em
+	.footer-content
+		.footer-description
 			.icon
-				vertical-align middle
-				width 20px
-				height 20px
-				margin-right 0.5em
-	.localization-header-footer
-		.localization-title-footer
-			text-transform uppercase
-			font-weight 900
-			color palette('Grey', '600')
-			margin-top 0
-			margin-bottom 1em
-	#localization-footer
-		list-style none
-		margin 0
-		padding 0	
-		li
-			display block
-			margin-bottom 1em
-			.city
-				margin-left 1.3em
+				margin-bottom 15px
+			.footer-text-description
+				color palette('Grey', '50')
+				font-style italic
+		.footer-links
+			.list-inline
+				a
+					color palette('Grey')
+					text-transform uppercase
+					&:hover
+						color palette('Grey', '50')
+		.footer-social
+			.footer-social-box
+				a
+					margin-right 5px
+					.icon
+						display inline-block
+		.footer-address
+			.footer-address-box
+				font-style italic
+				color palette('Grey', '50')

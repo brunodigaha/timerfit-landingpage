@@ -1,37 +1,30 @@
-header
-	height 100vh
+.header
+	height 75vh
 	background linear-gradient(
 		rgba(0, 0, 0, 0.5),
 		rgba(0, 0, 0, 0.5)),
-		url(../img/hero.jpg)
-	left 0
-	top @left
-	width 100%
-	background-repeat no-repeat
-	background-position center
-	background-size cover
-	-webkit-background-size @background-size
-	-moz-background-size @background-size
-	-o-background-size @background-size
-	display: flex
-	flex-direction: column
-	justify-content: @background-position
-	align-items: @background-position
-	text-align: @background-position
-	.title-header
-		font-family Lato
-		font-weight 900
-		text-transform uppercase
-		color palette('Grey', '50')
-	.description-header
-		font-weight 500
-		text-transform uppercase
-		color palette('Grey', '50')
-		font-size 1.8em
-	.btn
-		border-radius 0
-		font-size 1.6em
-		font-weight 300
-		text-transform uppercase
-	.btn-info
-		border-color transparent
+		url(../img/header.jpg)
+	@extends .background
+	.header-content
+		min-height @height
+		display flex
+		align-items center
+		text-align @align-items
+		.icon
+			margin 0 auto
+		.header-title
+			text-transform uppercase
+			color palette('Grey', '50')
+			font-weight 900
+		.header-subtitle
+			text-transform uppercase
+			color palette('Grey', '50')
+			font-weight 500
+		.youtube
+			height 60px
+			border-radius 0
+			text-transform uppercase
+			font-style italic
+			font-weight 900
+			&:focus
+				outline 0 none

@@ -1,15 +1,28 @@
-html
-	height 100%
-	body
-		height @height
-		font-size 10px
-		font-family Lato
-		font-style normal
-		font-weight 300
-		-webkit-font-smoothing antialiased
-		-moz-osx-font-smoothing grayscale
-		h1, h2, h3, h4, h5, h6
-			font-family Lato
-		section
-			display table
-			width 100%
+.background
+	left 0
+	top @left
+	width 100%
+	background-repeat no-repeat
+	background-position center
+	background-size cover
+	-webkit-background-size @background-size
+	-moz-background-size @background-size
+	-o-background-size @background-size
+.section
+	padding 50px 0
+.section-heading
+	margin-bottom 50px
+.section-title
+	margin-top 0
+	text-transform uppercase
+	font-weight 900
+.divisor
+	max-width 50px
+	border-width 3px
+	margin-bottom 0
+.footer-title-box
+	margin-top 0
+	text-transform uppercase
+	font-weight 900
+	color palette('Grey', '50')
+	margin-bottom 25px
