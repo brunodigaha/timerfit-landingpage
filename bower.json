@@ -24,9 +24,9 @@
   ],
   "devDependencies": {
     "bootstrap-stylus": "~4.0.5",
-    "google-material-color": "~1.2.2",
+    "google-material-color": "~1.2.6",
     "jquery": "~2.1.4",
     "magnific-popup": "~1.0.0",
-    "modernizr": "~2.8.3"
+    "modernizr": "~3.1.0"
   }
 }

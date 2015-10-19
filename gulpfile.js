@@ -14,11 +14,12 @@ var gulp 		= require('gulp'),
 
 // Path JS Files
 var jsfiles = [
+	// Bower Libraries
 	'./public/bower_components/modernizr/modernizr.js',
 	'./public/bower_components/jquery/dist/jquery.js',
 	'./public/bower_components/magnific-popup/dist/jquery.magnific-popup.js',
-	'./public/js/lib/magnific-popup.js',
-	'./public/js/lib/fullpage.js'
+	// JS Functions
+	'./public/js/lib/magnific-popup.js'
 ];
 
 // Task Jade
@@ -93,7 +94,7 @@ gulp.task('sprite', function() {
 });
 
 // Task Default 
-gulp.task('default', ['jade', 'stylus', 'jshint', 'js', 'img', 'sprite'], function() {
+gulp.task('default', ['jade', 'stylus', 'jshint', 'js', 'img'], function() {
 	browserSync({
 		server: './public/'
 	});
@@ -102,5 +103,4 @@ gulp.task('default', ['jade', 'stylus', 'jshint', 'js', 'img', 'sprite'], functi
 	gulp.watch(jsfiles, ['jshint']);
 	gulp.watch('./public/js/**/*.js', ['js']);
 	gulp.watch('public/img/src/**/*.jpg', ['img']);
-	gulp.watch('public/img/src/**/*.png', ['sprite']);
 });
