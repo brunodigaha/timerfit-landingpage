@@ -18,8 +18,10 @@ var jsfiles = [
 	'./public/bower_components/modernizr/modernizr.js',
 	'./public/bower_components/jquery/dist/jquery.js',
 	'./public/bower_components/magnific-popup/dist/jquery.magnific-popup.js',
+	'./public/bower_components/jquery-easing-original/jquery.easing.js',
 	// JS Functions
-	'./public/js/lib/magnific-popup.js'
+	'./public/js/lib/magnific-popup.js',
+	'./public/js/lib/easing.js'
 ];
 
 // Task Jade
