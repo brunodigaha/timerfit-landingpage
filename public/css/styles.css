@@ -3957,7 +3957,7 @@ body {
   color: #fafafa;
 }
 .subscribe .subscribe-form .subscribe-form-content {
-  padding: 50px;
+  padding: 3rem;
   background-color: #fafafa;
   border: none;
   border-radius: 0;
@@ -3965,28 +3965,35 @@ body {
   -moz-box-shadow: 0 8px 6px -6px #000;
   box-shadow: 0 8px 6px -6px #000;
 }
-.subscribe .subscribe-form .subscribe-form-content .input-group .subscribe-mail {
-  height: 60px;
+.subscribe .subscribe-form .subscribe-form-content .form-group {
+  margin-bottom: 2rem;
+}
+.subscribe .subscribe-form .subscribe-form-content .form-group .subscribe-mail {
+  height: 6rem;
   border-radius: 0;
   text-transform: uppercase;
-  font-style: italic;
   font-weight: 900;
   -webkit-box-shadow: 0 8px 6px -6px #ccc;
   -moz-box-shadow: 0 8px 6px -6px #ccc;
   box-shadow: 0 8px 6px -6px #ccc;
 }
-.subscribe .subscribe-form .subscribe-form-content .input-group .subscribe-mail:focus {
+.subscribe .subscribe-form .subscribe-form-content .form-group .subscribe-mail:focus {
   border: 1px solid #ccc;
 }
-.subscribe .subscribe-form .subscribe-form-content .input-group .subscribe-submit {
-  height: 60px;
+.subscribe .subscribe-form .subscribe-form-content .subscribe-submit {
+  height: 6rem;
   border-radius: 0;
   text-transform: uppercase;
   font-style: italic;
   font-weight: 900;
 }
-.subscribe .subscribe-form .subscribe-form-content .input-group .subscribe-submit:focus {
+.subscribe .subscribe-form .subscribe-form-content .subscribe-submit:focus {
   outline: 0 none;
+}
+@media (min-width: 768px) {
+  .subscribe .subscribe-form .subscribe-form-content {
+    padding: 5rem;
+  }
 }
 .footer {
   background-color: #263238;
