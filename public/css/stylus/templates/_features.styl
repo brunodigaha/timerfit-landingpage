@@ -1,6 +1,6 @@
 .features
 	@extends .section
-	background-color palette('Teal', '400')
+	background-color palette('Cyan', '500')
 	.features-header
 		@extends .section-heading
 		.features-title-heading
@@ -15,6 +15,11 @@
 			font-weight 900
 		.features-content-box
 			color palette('Grey', '50')
-			padding 0 25px
-	.box-b
-		margin-top 20px
+			padding 0 2.5rem
+@media (min-width: 768px)
+	.features
+		.features-box-a
+			.features-content-box
+				padding 0 1rem
+		.box-b
+			margin-top 2rem

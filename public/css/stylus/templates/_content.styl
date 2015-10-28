@@ -7,12 +7,25 @@
 			@extends .section-title
 			color palette('Grey', '500')
 	.content-a
-		padding-bottom 80px
+		padding-bottom 1rem
 		.content-title-block
 			text-transform uppercase
 			color palette('Grey', '500')
 			font-weight 900
+			text-align center
 		.content-block
 			color palette('Grey', '800')
+			text-align center
 	.block-b
 		padding-bottom 0
+@media (min-width: 768px)
+	.content
+		.content-a
+			padding-bottom 6rem
+			.content-title-block
+				margin-top 0
+				text-align left
+			.content-block
+				text-align left
+		.block-b
+			padding-bottom 0

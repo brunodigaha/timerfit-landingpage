@@ -17,6 +17,8 @@ var jsfiles = [
 	// Bower Libraries
 	'./public/bower_components/modernizr/modernizr.js',
 	'./public/bower_components/jquery/dist/jquery.js',
+	'./public/bower_components/bootstrap-stylus/js/collapse.js',
+	'./public/bower_components/bootstrap-stylus/js/transition.js',
 	'./public/bower_components/magnific-popup/dist/jquery.magnific-popup.js',
 	'./public/bower_components/jquery-easing-original/jquery.easing.js',
 	// JS Functions
