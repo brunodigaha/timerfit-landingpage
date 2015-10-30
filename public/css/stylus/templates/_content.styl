@@ -5,27 +5,28 @@
 		@extends .section-heading
 		.content-title-heading
 			@extends .section-title
-			color palette('Grey', '500')
+			color palette('Grey', '600')
 	.content-a
-		padding-bottom 1rem
+		padding-bottom 2rem
 		.content-title-block
 			text-transform uppercase
-			color palette('Grey', '500')
+			color palette('Grey', '600')
 			font-weight 900
-			text-align center
+			margin-top 0
 		.content-block
-			color palette('Grey', '800')
-			text-align center
+			color palette('Grey', '700')
 	.block-b
 		padding-bottom 0
 @media (min-width: 768px)
 	.content
 		.content-a
 			padding-bottom 6rem
-			.content-title-block
-				margin-top 0
-				text-align left
 			.content-block
-				text-align left
+				font-size 1.6rem
 		.block-b
 			padding-bottom 0
+@media (min-width: 992px)
+	.content
+		.content-a
+			.content-block
+				font-size 2rem
