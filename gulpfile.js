@@ -1,16 +1,22 @@
 // Plugins
-var gulp 		= require('gulp'),
-	jade 		= require('gulp-jade'),
-	stylus 		= require('gulp-stylus'),
-	jshint 		= require('gulp-jshint'),
-	stylish 	= require('jshint-stylish'),
-	cache 		= require('gulp-cached'),
-	concat 		= require('gulp-concat'),
-	imagemin 	= require('gulp-imagemin'),
+var gulp = require('gulp'),
+	jade = require('gulp-jade'),
+	stylus = require('gulp-stylus'),
+	jshint = require('gulp-jshint'),
+	stylish = require('jshint-stylish'),
+	cache = require('gulp-cached'),
+	concat = require('gulp-concat'),
+	imagemin = require('gulp-imagemin'),
 	jpgcompress = require('imagemin-jpeg-recompress'),
-	sprite 		= require('css-sprite').stream,
+	sprite = require('css-sprite').stream,
 	browserSync = require('browser-sync'),
-	reload 		= browserSync.reload;
+	reload = browserSync.reload,
+	usemin = require('gulp-usemin'),
+	uglify = require('gulp-uglify'),
+	minifyHtml = require('gulp-minify-html'),
+	minifyCss = require('gulp-minify-css'),
+	rev = require('gulp-rev'),
+	gulpSequence = require('gulp-sequence');
 
 // Path JS Files
 var jsfiles = [
@@ -83,7 +89,7 @@ gulp.task('img', function() {
 		.pipe(jpgcompress({
 			loops: 3
 		})())
-		.pipe(gulp.dest('./public/img'))
+		.pipe(gulp.dest('./public/img'));
 });
 
 // Task Sprites
@@ -97,8 +103,29 @@ gulp.task('sprite', function() {
 		.pipe(gulp.dest('./public/css/stylus/core'));
 });
 
+gulp.task('usemin', function() {
+	return gulp.src('./public/*.html')
+		.pipe(usemin({
+			css: [minifyCss, rev],
+			html: [function() {
+				return minifyHtml({
+					empty: true
+				});
+			}],
+			js: [uglify, rev]
+		}))
+		.pipe(gulp.dest('dist/'));
+});
+
+gulp.task('copy', function() {
+	return gulp.src('public/img/*.+(jpg|png|gif|svg)')
+		//.pipe(rev())
+		//.pipe(rev.manifest())
+		.pipe(gulp.dest('dist/img'));
+});
+
 // Task Default 
-gulp.task('default', ['jade', 'stylus', 'jshint', 'js', 'img'], function() {
+gulp.task('dev', ['jade', 'stylus', 'jshint', 'js', 'img'], function() {
 	browserSync({
 		server: './public/'
 	});
@@ -108,3 +135,5 @@ gulp.task('default', ['jade', 'stylus', 'jshint', 'js', 'img'], function() {
 	gulp.watch('./public/js/**/*.js', ['js']);
 	gulp.watch('public/img/src/**/*.jpg', ['img']);
 });
+
+gulp.task('prod', gulpSequence('usemin', 'copy'));
