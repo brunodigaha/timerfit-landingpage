@@ -13095,33 +13095,50 @@ $.extend( $.easing,
 });})(jQuery);
 
 $(document).ready(function() {
-  $('.youtube').magnificPopup({
-    items: {
-      src: 'https://www.youtube.com/watch?v=CvIr-2lMLsk'
-    },
-    type: 'iframe',
-    iframe: {
-      markup: '<div class="mfp-iframe-scaler">' +
-        '<div class="mfp-close"></div>' +
-        '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
-        '</div>',
-      patterns: {
-        youtube: {
-          index: 'youtube.com/',
-          id: 'v=',
-          src: '//www.youtube.com/embed/%id%?autoplay=1'
-        }
-      },
-      srcAction: 'iframe_src',
-    }
-  });
+	$('.youtube').magnificPopup({
+		items: {
+			src: 'https://www.youtube.com/watch?v=CvIr-2lMLsk'
+		},
+		type: 'iframe',
+		iframe: {
+			markup: '<div class="mfp-iframe-scaler">' +
+				'<div class="mfp-close"></div>' +
+				'<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
+				'</div>',
+			patterns: {
+				youtube: {
+					index: 'youtube.com/',
+					id: 'v=',
+					src: '//www.youtube.com/embed/%id%?autoplay=1'
+				}
+			},
+			srcAction: 'iframe_src',
+		}
+	});
 });
 $(document).ready(function() {
-	$('a.header-scroll').bind('click', function(event) {
+	$('a.nav-scroll').bind('click', function(event) {
 		var $anchor = $(this);
 		$('html, body').stop().animate({
-			scrollTop: $($anchor.attr('href')).offset().top
+			scrollTop: ($($anchor.attr('href')).offset().top - 50)
 		}, 1200, 'easeInOutExpo');
 		event.preventDefault();
+	});
+});
+$(document).ready(function() {
+
+	var header = $('.header').height();
+
+	$(".navbar").hide();
+
+	$(function() {
+		$(window).scroll(function() {
+			if ($(this).scrollTop() >= header - (header * 5.3) / 100) {
+				$('.navbar').fadeIn();
+			} else {
+				$('.navbar').fadeOut();
+			}
+		});
+
 	});
 });

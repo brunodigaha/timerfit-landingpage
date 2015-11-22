@@ -3756,6 +3756,23 @@ body {
     font-size: 16px;
   }
 }
+@media (max-width: 992px) {
+  nav {
+    display: none !important;
+  }
+}
+.navbar .navbar-header .navbar-brand {
+  padding: 7px 15px;
+}
+.navbar .navbar-header .navbar-brand .logo {
+  max-height: 100%;
+  height: 100%;
+  max-width: 100%;
+  width: auto;
+  margin: 0 auto;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
 .header {
   height: 100vh;
   background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../img/header.jpg");
@@ -3765,11 +3782,6 @@ body {
   display: flex;
   align-items: center;
   text-align: center;
-}
-.header .header-content .logo {
-  margin: 0 auto;
-  width: 167px;
-  height: 50px;
 }
 .header .header-content .header-title {
   font-size: 3.4rem;
@@ -3896,10 +3908,6 @@ body {
   }
 }
 @media (min-width: 768px) {
-  .header .header-content .logo {
-    width: 233px;
-    height: 70px;
-  }
   .header .header-content .header-title {
     font-size: 4rem;
   }

@@ -29,7 +29,8 @@ var jsfiles = [
 	'./public/bower_components/jquery-easing-original/jquery.easing.js',
 	// JS Functions
 	'./public/js/lib/magnific-popup.js',
-	'./public/js/lib/easing.js'
+	'./public/js/lib/easing.js',
+	'./public/js/lib/show-nav.js'
 ];
 
 // Task Jade
