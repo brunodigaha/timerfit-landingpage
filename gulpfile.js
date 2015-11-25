@@ -30,7 +30,8 @@ var jsfiles = [
 	// JS Functions
 	'./public/js/lib/magnific-popup.js',
 	'./public/js/lib/easing.js',
-	'./public/js/lib/show-nav.js'
+	'./public/js/lib/show-nav.js',
+	'./public/js/lib/collapse-nav.js'
 ];
 
 // Task Jade
